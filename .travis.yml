@@ -17,8 +17,8 @@ after_success: #for production
 #log in to the docker CLI
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
 #take those images and push them to dockerhub
-  - docker push yusra/muti-client
-  - docker push yusra/muti-nginx
-  - docker push yusra/muti-server
-  - docker push yusra/muti-worker
+  - docker push yusra/multi-client
+  - docker push yusra/multi-nginx
+  - docker push yusra/multi-server
+  - docker push yusra/multi-worker
 
